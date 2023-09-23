@@ -60,12 +60,13 @@ redo: Redo the last undone action.
 
 ![image](https://github.com/Pushkarpatidar400/To_Do_List/assets/118051799/59ca298f-c327-4906-b90b-3b84e302779a)
 
-quit: Quit the application.
+Back to Home
 
 
 **Design Patterns**:
 
 Memento Pattern: Implemented to enable undo and redo actions.
+
 Builder Pattern: Used for constructing tasks with optional attributes like due date.
 
 
