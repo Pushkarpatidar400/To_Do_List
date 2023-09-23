@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        /* Add your custom styles here if needed */
+    </style>
+</head>
+<body class="container">
+    <h1 class="center-align">All Tasks</h1>
+    <div class="row">
+        <div class="col s12 m6">
+            <a class="waves-effect waves-light btn" href="/tasks?filter=completed">Completed Tasks</a>
+        </div>
+        <div class="col s12 m6">
+            <a class="waves-effect waves-light btn" href="/tasks?filter=not_completed">Not Completed Tasks</a>
+        </div>
+    </div>
+    <ul class="collection">
+        {% for task in tasks %}
+            <li class="collection-item">
+                {{ task.name }} - {{ task.description }} - Due: {{ task.due_date }}
+                {% if not task.completed %}
+                    <a href="/complete/{{ task.id }}" class="secondary-content waves-effect waves-light btn-small">Mark as Completed</a>
+                {% endif %}
+                <a href="/delete/{{ task.id }}" class="secondary-content waves-effect waves-light btn-small">Delete</a>
+
+                <div>
+                    <a href="/undo/{{ task.id }}" class="waves-effect waves-light btn-small">Undo</a>
+                    <a href="/redo/{{ task.id }}" class="waves-effect waves-light btn-small">Redo</a>
+                </div>                
+            </li>
+        {% endfor %}
+    </ul>
+
+    <div class="row">
+        <div class="col s12">
+            <a href="/" class="waves-effect waves-light btn">Back to Home</a>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
