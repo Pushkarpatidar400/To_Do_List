@@ -25,3 +25,47 @@ Functionalities :-
    ![image](https://github.com/Pushkarpatidar400/To_Do_List/assets/118051799/969cc3fc-3346-4564-8006-c2cfcc411e30)
    
 6. Implement the ability to view tasks, either all at once or filtered by 'completed' or 'pending'
+   Completed Task :
+   ![image](https://github.com/Pushkarpatidar400/To_Do_List/assets/118051799/a56036ff-35a2-420e-ba06-438c55df5e13)
+
+   Pending Task:
+   ![image](https://github.com/Pushkarpatidar400/To_Do_List/assets/118051799/87c56ab6-f403-4a78-90fe-1ea1923970ba)
+
+Prerequisites:-
+* Python 3.6 or higher
+
+**Usage :-**
+
+Run the main script:
+Command :- python app.py
+
+Use the following option in UI to interact with the To-Do List Manager:
+
+add_task: Add a new task. Example: Add Task: "Buy groceries, Due: 2023-09-20"
+![image](https://github.com/Pushkarpatidar400/To_Do_List/assets/118051799/5b9f5823-e5cf-4cc3-9a36-62b57e98dd34)
+
+mark_completed: Mark a task as completed. Example: Mark Completed: "Buy groceries"
+![image](https://github.com/Pushkarpatidar400/To_Do_List/assets/118051799/59ca298f-c327-4906-b90b-3b84e302779a)
+
+view_tasks: View tasks. Options: "Show completed", "Show Not Completed"
+undo: Undo the last action.
+![image](https://github.com/Pushkarpatidar400/To_Do_List/assets/118051799/5b9f5823-e5cf-4cc3-9a36-62b57e98dd34)
+
+redo: Redo the last undone action.
+![image](https://github.com/Pushkarpatidar400/To_Do_List/assets/118051799/59ca298f-c327-4906-b90b-3b84e302779a)
+quit: Quit the application.
+
+
+**Design Patterns**:
+
+Memento Pattern: Implemented to enable undo and redo actions.
+Builder Pattern: Used for constructing tasks with optional attributes like due date.
+
+
+
+
+
+
+
+
+
