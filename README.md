@@ -25,7 +25,9 @@ Functionalities :-
    ![image](https://github.com/Pushkarpatidar400/To_Do_List/assets/118051799/969cc3fc-3346-4564-8006-c2cfcc411e30)
    
 6. Implement the ability to view tasks, either all at once or filtered by 'completed' or 'pending'
+   
    Completed Task :
+   
    ![image](https://github.com/Pushkarpatidar400/To_Do_List/assets/118051799/a56036ff-35a2-420e-ba06-438c55df5e13)
 
    Pending Task:
